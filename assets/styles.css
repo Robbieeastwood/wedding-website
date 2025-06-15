@@ -1,0 +1,16 @@
+
+body {
+  margin: 0;
+  font-family: 'Georgia', serif;
+  background: #fffef9;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+  text-align: center;
+}
+h1 {
+  color: #6B8E23;
+}
