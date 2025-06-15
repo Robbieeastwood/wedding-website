@@ -1,22 +1,27 @@
 
+* {
+  box-sizing: border-box;
+}
+
 body, html {
   margin: 0;
   padding: 0;
   height: 100%;
-  font-family: 'Georgia', serif;
-  background: #fffef9;
+  font-family: 'Playfair Display', serif;
+  background: #fdfdfc;
+  color: #333;
 }
 
 .container {
   display: flex;
-  flex-direction: row;
   height: 100vh;
+  width: 100%;
   overflow: hidden;
 }
 
-.image-panel {
-  width: 55%;
-  background-image: url('https://i.imgur.com/UdDfaTu.jpg'); /* couple photo placeholder */
+.left {
+  flex: 1;
+  background-image: url('engagement-photo.jpg');
   background-size: cover;
   background-position: center;
   position: relative;
@@ -25,71 +30,49 @@ body, html {
 .overlay {
   width: 100%;
   height: 100%;
-  background: linear-gradient(to top right, rgba(0,0,0,0.4), rgba(0,0,0,0.2));
+  background: linear-gradient(to bottom, rgba(0,0,0,0.4), rgba(0,0,0,0.1));
   display: flex;
-  justify-content: flex-start;
   align-items: flex-end;
   padding: 2rem;
 }
 
-.intro-text {
+.intro {
   color: white;
   font-family: 'Cormorant Garamond', serif;
 }
 
-.intro-text h1 {
+.intro h1 {
+  font-size: 2.5rem;
+  margin: 0;
+}
+
+.intro h1 span {
+  font-family: 'Great Vibes', cursive;
   font-size: 3rem;
-  font-weight: 500;
+  color: #ffd700;
 }
 
-.intro-text h1 span {
-  font-family: 'Great Vibes', cursive;
-  font-size: 3.2rem;
-}
-
-.intro-text p {
-  font-size: 1rem;
-  margin: 0.2rem 0;
-}
-
-.info-panel {
-  width: 45%;
-  padding: 2rem;
-  overflow-y: auto;
+.right {
+  flex: 1;
+  padding: 3rem;
   background: #fffef9;
+  overflow-y: auto;
 }
 
-.info-panel h2 {
-  font-family: 'Playfair Display', serif;
-  font-size: 1.8rem;
-  margin-bottom: 1.5rem;
-}
-
-.info-panel .celebrate {
-  color: #B68D40;
+.right h2 {
   font-family: 'Great Vibes', cursive;
-}
-
-.card {
-  background: white;
-  border: 1px solid #eee;
-  border-radius: 12px;
-  padding: 1rem;
-  margin-bottom: 1.5rem;
-  box-shadow: 0 0 8px rgba(0,0,0,0.05);
-}
-
-.card h3 {
-  font-size: 1.1rem;
+  font-size: 2.5rem;
+  color: #b58e1f;
   margin-top: 0;
-  margin-bottom: 0.5rem;
 }
 
-.card ul {
+.right h3 {
+  font-size: 1.25rem;
+  margin-top: 2rem;
+}
+
+.right ul {
   list-style: none;
-  padding: 0;
-}
-
-.card li {
-  padding: 0.25rem 0;
+  padding-left: 0;
+  line-height: 1.8;
 }
