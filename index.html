@@ -1,0 +1,77 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Robbie & Sabeth's Wedding</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Robbie & Sabeth</h1>
+        <p>September 5th, 2025 • Pilu at Freshwater</p>
+    </header>
+
+    <section class="intro">
+        <h2>You're Invited</h2>
+        <p>Please join us for a celebration of love, food, and heritage at our wedding. Together we'll enjoy a beautiful ceremony and a meal to remember at the iconic Pilu, an Italian two-hatted restaurant overlooking Freshwater Beach.</p>
+    </section>
+
+    <section class="our-story">
+        <h2>Our Story</h2>
+        <p>Robbie and Sabeth’s story began with laughter, good food, and shared dreams. From coastlines to quiet cafés, our journey has been full of heart. Now, surrounded by family and friends, we're ready to begin our next chapter—married, joyful, and very well fed.</p>
+    </section>
+
+    <section class="details">
+        <h2>Event Details</h2>
+        <ul>
+            <li><strong>Location:</strong> Pilu at Freshwater</li>
+            <li><strong>Date:</strong> September 5th, 2025</li>
+            <li><strong>Time:</strong> 10:00 AM – 4:00 PM</li>
+            <li><strong>Dress Code:</strong> Formal Attire</li>
+        </ul>
+    </section>
+
+    <section class="schedule">
+        <h2>Schedule</h2>
+        <ul>
+            <li>10:00 AM – Ceremony</li>
+            <li>11:00 AM – Aperitivo & Photos</li>
+            <li>12:00 PM – Seated Lunch Reception</li>
+            <li>3:30 PM – Farewell Toast</li>
+        </ul>
+    </section>
+
+    <section class="rsvp">
+        <h2>RSVP</h2>
+        <form name="rsvp" method="POST" netlify>
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="attendance">Will you attend?</label>
+            <select id="attendance" name="attendance" required>
+                <option value="">--Please choose--</option>
+                <option value="Yes">Yes, I will attend</option>
+                <option value="No">Sorry, I can't make it</option>
+            </select>
+
+            <label for="guests">Number of guests (including you)</label>
+            <input type="number" id="guests" name="guests" min="1" max="4" required>
+
+            <label for="diet">Dietary Requirements</label>
+            <input type="text" id="diet" name="diet">
+
+            <label for="message">Message for the couple</label>
+            <textarea id="message" name="message"></textarea>
+
+            <button type="submit">Submit RSVP</button>
+        </form>
+        <p class="form-note">You'll see a confirmation once submitted. Thank you!</p>
+    </section>
+
+    <footer>
+        <p>With love, Robbie & Sabeth</p>
+    </footer>
+</body>
+</html>
