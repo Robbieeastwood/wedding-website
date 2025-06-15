@@ -1,21 +1,14 @@
 
-* {
-  box-sizing: border-box;
-}
-
 body, html {
   margin: 0;
   padding: 0;
-  height: 100%;
   font-family: 'Playfair Display', serif;
-  background: #fdfdfc;
-  color: #333;
+  background-color: #fffef9;
 }
 
 .container {
   display: flex;
   height: 100vh;
-  width: 100%;
   overflow: hidden;
 }
 
@@ -28,51 +21,93 @@ body, html {
 }
 
 .overlay {
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(to bottom, rgba(0,0,0,0.4), rgba(0,0,0,0.1));
-  display: flex;
-  align-items: flex-end;
-  padding: 2rem;
-}
-
-.intro {
+  position: absolute;
+  bottom: 2rem;
+  left: 2rem;
   color: white;
-  font-family: 'Cormorant Garamond', serif;
+  background: rgba(0,0,0,0.4);
+  padding: 1.5rem;
+  border-radius: 10px;
 }
 
 .intro h1 {
-  font-size: 2.5rem;
-  margin: 0;
-}
-
-.intro h1 span {
   font-family: 'Great Vibes', cursive;
   font-size: 3rem;
-  color: #ffd700;
+  margin: 0;
+  color: #fff;
+}
+
+.intro p {
+  font-family: 'Cormorant Garamond', serif;
+  margin: 0.3rem 0;
+  font-size: 1rem;
 }
 
 .right {
   flex: 1;
-  padding: 3rem;
   background: #fffef9;
+  padding: 2rem 2.5rem;
   overflow-y: auto;
 }
 
-.right h2 {
+h2 {
   font-family: 'Great Vibes', cursive;
-  font-size: 2.5rem;
+  font-size: 2.4rem;
+  color: #1f1f1f;
+}
+
+.highlight {
+  font-family: 'Playfair Display', serif;
   color: #b58e1f;
-  margin-top: 0;
 }
 
-.right h3 {
-  font-size: 1.25rem;
+.card {
+  background: white;
+  padding: 1.25rem;
+  border-radius: 12px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.05);
   margin-top: 2rem;
+  border: 1px solid #f0e6d6;
 }
 
-.right ul {
-  list-style: none;
-  padding-left: 0;
-  line-height: 1.8;
+.card h3 {
+  margin-top: 0;
+  font-family: 'Cormorant Garamond', serif;
+}
+
+.card ul {
+  padding-left: 1rem;
+}
+
+.card input[type="text"],
+.card input[type="email"],
+.card input[type="tel"],
+.card textarea {
+  width: 100%;
+  padding: 0.5rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.75rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-family: 'Playfair Display', serif;
+}
+
+.card textarea {
+  min-height: 80px;
+  resize: vertical;
+}
+
+.card label {
+  display: block;
+  margin: 0.5rem 0;
+}
+
+.card button {
+  background: linear-gradient(to right, #e0b265, #e28b46);
+  color: white;
+  padding: 0.75rem 1.5rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
 }
